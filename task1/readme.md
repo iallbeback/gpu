@@ -38,12 +38,19 @@ make run
 
 
 При запуске на polus получилось следующее:
+
 --- Comparison Report ---
+
 CPU eps: 60.63202400
+
 GPU eps: 60.63202400
+
 CPU time: 6.83 sec
+
 GPU time: 1.92 sec
+
 Speedup (CPU/GPU): 3.56x
+
 ✅ EPS values match (within threshold).
 
 Файлы, которые при этом сгенерировались, также выложенны в проекте.
