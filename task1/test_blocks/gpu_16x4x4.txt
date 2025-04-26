@@ -1,3 +1,4 @@
+Using custom block size: 16 x 4 x 4
 GPU Device: Tesla P100-SXM2-16GB
 Total Global Memory: 16280.88 MB
 Max Threads per Block: 1024

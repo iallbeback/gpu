@@ -47,10 +47,16 @@ double extract_time(const char *filename) {
 
 int main() {
     printf("Running CPU version...\n");
-    system("./jacobi3d_cpu > cpu_output.txt");
+    if (system("./jacobi3d_cpu > cpu_output.txt") != 0) {
+        fprintf(stderr, "Error running CPU version\n");
+        return 1;
+    }
 
     printf("Running GPU version...\n");
-    system("./jacobi3d_gpu > gpu_output.txt");
+    if (system("./jacobi3d_gpu > gpu_output.txt") != 0) {
+        fprintf(stderr, "Error running GPU version\n");
+        return 1;
+    }
 
     double eps_cpu = extract_eps("cpu_output.txt");
     double eps_gpu = extract_eps("gpu_output.txt");
