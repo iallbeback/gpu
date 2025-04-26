@@ -1,6 +1,3 @@
-Отлично, вот исправленный вариант `README.md` с твоими уточнениями:
-
----
 
 # Jacobi3D Benchmark: CPU vs GPU
 
