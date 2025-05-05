@@ -52,7 +52,7 @@ __device__ T MyatomicMax(T* address, T val) {
         do {
             assumed = old;
             old = atomicCAS(address_as_ull, assumed,
-                __double_as_longlong(max(val, __longlong_as_double(assumed))));
+                __double_as_longlong(fmax(val, __longlong_as_double(assumed))));
         } while (assumed != old);
         return __longlong_as_double(old);
     } else {
@@ -67,45 +67,52 @@ __device__ T MyatomicMax(T* address, T val) {
     }
 }
 
-__global__ void compute_eps_and_update(real_t* __restrict A, const real_t* __restrict B, real_t* eps, int size) {
-    extern __shared__ real_t shared_eps[];
+__global__ void compute_eps_and_update(const real_t* __restrict A, const real_t* __restrict B, real_t* eps, int size) {
+    __shared__ real_t shared_max[BLOCK_SIZE_X*BLOCK_SIZE_Y*BLOCK_SIZE_Z / 32];
+
+    int tid = threadIdx.x + threadIdx.y * blockDim.x + threadIdx.z * blockDim.x * blockDim.y;
+    int warp_id = tid / 32;
+    int lane_id = tid % 32;
     
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    int j = blockIdx.y * blockDim.y + threadIdx.y;
-    int k = blockIdx.z * blockDim.z + threadIdx.z;
+    int i = blockIdx.x * blockDim.x + threadIdx.x + 1;
+    int j = blockIdx.y * blockDim.y + threadIdx.y + 1;
+    int k = blockIdx.z * blockDim.z + threadIdx.z + 1;
     
-    int tid = threadIdx.z * blockDim.y * blockDim.x + threadIdx.y * blockDim.x + threadIdx.x;
+    real_t my_max = 0.0;
     
-    real_t local_eps = 0.0;
-    
-    if (i > 0 && i < size - 1 && j > 0 && j < size - 1 && k > 0 && k < size - 1) {
+    if (i < size - 1 && j < size - 1 && k < size - 1) {
         int idx = (k * size + j) * size + i;
-        real_t tmp = fabs(B[idx] - A[idx]);
-        local_eps = tmp;
-        A[idx] = B[idx];
+        my_max = fabs(B[idx] - A[idx]);
     }
-    
-    shared_eps[tid] = local_eps;
+
+    for (int offset = 16; offset > 0; offset >>= 1) {
+        real_t tmp = __shfl_down_sync(0xFFFFFFFF, my_max, offset);
+        my_max = fmax(my_max, tmp);
+    }
+
+    if (lane_id == 0) {
+        shared_max[warp_id] = my_max;
+    }
     __syncthreads();
 
-    for (int s = blockDim.x * blockDim.y * blockDim.z / 2; s > 0; s >>= 1) {
-        if (tid < s) {
-            shared_eps[tid] = fmax(shared_eps[tid], shared_eps[tid + s]);
+    if (warp_id == 0) {
+        my_max = (lane_id < blockDim.x * blockDim.y * blockDim.z / 32) ? shared_max[lane_id] : 0.0;
+        for (int offset = 4; offset > 0; offset >>= 1) {
+            real_t tmp = __shfl_down_sync(0xFFFFFFFF, my_max, offset);
+            my_max = fmax(my_max, tmp);
         }
-        __syncthreads();
-    }
-
-    if (tid == 0) {
-        MyatomicMax(eps, shared_eps[0]);
+        if (lane_id == 0) {
+            MyatomicMax(eps, my_max);
+        }
     }
 }
 
 __global__ void update_B(const real_t* __restrict A, real_t* __restrict B, int size) {
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    int j = blockIdx.y * blockDim.y + threadIdx.y;
-    int k = blockIdx.z * blockDim.z + threadIdx.z;
+    int i = blockIdx.x * blockDim.x + threadIdx.x + 1;
+    int j = blockIdx.y * blockDim.y + threadIdx.y + 1;
+    int k = blockIdx.z * blockDim.z + threadIdx.z + 1;
     
-    if (i > 0 && i < size - 1 && j > 0 && j < size - 1 && k > 0 && k < size - 1) {
+    if (i < size - 1 && j < size - 1 && k < size - 1) {
         int idx = (k * size + j) * size + i;
         int stride = size * size;
         
@@ -116,7 +123,7 @@ __global__ void update_B(const real_t* __restrict A, real_t* __restrict B, int s
                     A[idx + size] +     // (i,j+1,k)
                     A[idx + stride];    // (i+1,j,k)
         
-        B[idx] = sum / 6.0f;
+        B[idx] = sum / (real_t)6.0;
     }
 }
 
@@ -134,16 +141,15 @@ void print_gpu_info() {
 }
 
 int main(int argc, char** argv) {
-	
-	dim3 blockSize(BLOCK_SIZE_X, BLOCK_SIZE_Y, BLOCK_SIZE_Z);
-	
-	if (argc > 3) {
-		blockSize.x = atoi(argv[1]);
-		blockSize.y = atoi(argv[2]);
-		blockSize.z = atoi(argv[3]);
-		printf("Using custom block size: %d x %d x %d\n", blockSize.x, blockSize.y, blockSize.z);
-	}
-	
+    dim3 blockSize(BLOCK_SIZE_X, BLOCK_SIZE_Y, BLOCK_SIZE_Z);
+    
+    if (argc > 3) {
+        blockSize.x = atoi(argv[1]);
+        blockSize.y = atoi(argv[2]);
+        blockSize.z = atoi(argv[3]);
+        printf("Using custom block size: %d x %d x %d\n", blockSize.x, blockSize.y, blockSize.z);
+    }
+    
     print_gpu_info();
     
     size_t size = L * L * L * sizeof(real_t);
@@ -185,10 +191,6 @@ int main(int argc, char** argv) {
         (L + blockSize.z - 1) / blockSize.z
     );
 
-    size_t shared_mem_size = blockSize.x * blockSize.y * blockSize.z * sizeof(real_t);
-    printf("Using block size: %d x %d x %d\n", blockSize.x, blockSize.y, blockSize.z);
-    printf("Shared memory per block: %zu bytes\n", shared_mem_size);
-    
     cudaEvent_t start, stop;
     CUDA_CHECK(cudaEventCreate(&start));
     CUDA_CHECK(cudaEventCreate(&stop));
@@ -198,13 +200,19 @@ int main(int argc, char** argv) {
         real_t h_eps = 0;
         CUDA_CHECK(cudaMemcpy(d_eps, &h_eps, sizeof(real_t), cudaMemcpyHostToDevice));
         
-        compute_eps_and_update<<<gridSize, blockSize, shared_mem_size>>>(d_A, d_B, d_eps, L);
-        CUDA_CHECK(cudaGetLastError());
-        CUDA_CHECK(cudaDeviceSynchronize());
-        
-        update_B<<<gridSize, blockSize>>>(d_A, d_B, L);
-        CUDA_CHECK(cudaGetLastError());
-        CUDA_CHECK(cudaDeviceSynchronize());
+        if (it % 2 == 1) {
+            compute_eps_and_update<<<gridSize, blockSize>>>(d_A, d_B, d_eps, L);
+            CUDA_CHECK(cudaGetLastError());
+            CUDA_CHECK(cudaDeviceSynchronize());
+            
+            update_B<<<gridSize, blockSize>>>(d_B, d_A, L);
+        } else {
+            compute_eps_and_update<<<gridSize, blockSize>>>(d_B, d_A, d_eps, L);
+            CUDA_CHECK(cudaGetLastError());
+            CUDA_CHECK(cudaDeviceSynchronize());
+            
+            update_B<<<gridSize, blockSize>>>(d_A, d_B, L);
+        }
         
         CUDA_CHECK(cudaMemcpy(&h_eps, d_eps, sizeof(real_t), cudaMemcpyDeviceToHost));
         

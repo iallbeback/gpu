@@ -14,7 +14,7 @@ COMPARE_FLAGS = -O3 -std=c99
 
 TARGETS = jacobi3d_cpu jacobi3d_gpu compare_results
 
-BLOCK_SIZES = 4x4x4 8x8x8 16x16x16 32x32x1 16x8x4 8x16x4 4x16x8 32x4x4 16x4x4 8x8x4 4x4x8 2x2x2 4x8x8 8x4x8 8x8x4 16x16x1 32x8x1 64x4x1
+BLOCK_SIZES = 4x4x4 8x8x8 16x16x16 32x32x1 16x8x4 8x16x4 4x16x8 32x4x4 16x4x4 8x8x4 4x4x8 4x8x8 8x4x8 8x8x4 16x16x1 32x8x1 64x4x1
 
 all: $(TARGETS)
 

@@ -21,7 +21,7 @@
  Jacobi3D CPU Benchmark Completed.
  Size            =  900 x  900 x  900
  Iterations      =                 20
- Time in seconds =               7.49
+ Time in seconds =               7.17
  Operation type  =     double
  Threads used    =                152
  END OF Jacobi3D Benchmark

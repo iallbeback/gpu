@@ -5,8 +5,6 @@ Max Threads per Block: 1024
 Max Threads Dim: 1024 x 1024 x 64
 Using array size: 900 x 900 x 900
 Memory used per array: 5561.83 MB
-Using block size: 8 x 8 x 8
-Shared memory per block: 4096 bytes
  IT =    1   EPS =  2.6980000E+03
  IT =    2   EPS =  1.3495000E+03
  IT =    3   EPS =  5.2458333E+02
@@ -17,20 +15,20 @@ Shared memory per block: 4096 bytes
  IT =    8   EPS =  1.6295002E+02
  IT =    9   EPS =  1.3928905E+02
  IT =   10   EPS =  1.2331360E+02
- IT =   11   EPS =  1.1221165E+02
- IT =   12   EPS =  1.0546532E+02
- IT =   13   EPS =  9.8133253E+01
- IT =   14   EPS =  9.1255019E+01
- IT =   15   EPS =  8.4403267E+01
- IT =   16   EPS =  7.8237112E+01
- IT =   17   EPS =  7.2296906E+01
- IT =   18   EPS =  6.7634362E+01
- IT =   19   EPS =  6.3714148E+01
- IT =   20   EPS =  6.0632024E+01
+ IT =   11   EPS =  1.1194434E+02
+ IT =   12   EPS =  1.0092637E+02
+ IT =   13   EPS =  9.1420309E+01
+ IT =   14   EPS =  8.2521366E+01
+ IT =   15   EPS =  7.4935223E+01
+ IT =   16   EPS =  6.8191827E+01
+ IT =   17   EPS =  6.2778371E+01
+ IT =   18   EPS =  5.8569235E+01
+ IT =   19   EPS =  5.5176243E+01
+ IT =   20   EPS =  5.2283675E+01
  Jacobi3D GPU Benchmark Completed.
  Size            =  900 x  900 x  900
  Iterations      =                 20
- Time in seconds =               1.88
+ Time in seconds =               1.25
  Operation type  =     double
  GPU Memory used =     11123.66 MB
  Block size      =     8 x 8 x 8
