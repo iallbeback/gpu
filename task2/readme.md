@@ -65,6 +65,9 @@ make prof
 - 16x16
 - 16x8
 - 8x16
+- 32x32
+- 32x8
+- 8x32
 
 ## Пример результатов
 
@@ -106,4 +109,4 @@ make test_blocks
 
 Результаты сохраняются в директории `test_blocks/` для последующего анализа.
 
-![График результатов](https://github.com/user-attachments/assets/675a65d6-4462-40ea-8257-821d45886327)
+![График результатов](https://github.com/user-attachments/assets/5e1c91de-7c66-463e-8b42-27e0bb0c3ba2)
