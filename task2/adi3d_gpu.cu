@@ -3,6 +3,22 @@
 #include <cuda_runtime.h>
 #include <device_launch_parameters.h>
 #include <assert.h>
+#include <fstream>
+#include <string>
+
+struct KernelStats {
+    float x_sweep_time = 0;
+    float y_sweep_time = 0;
+    float to_z_major_time = 0;
+    float z_sweep_time = 0;
+    float from_z_major_time = 0;
+    float total_time = 0;
+    int block_x = 0;
+    int block_y = 0;
+};
+
+__device__ clock_t kernel_start_time;
+__device__ clock_t kernel_end_time;
 
 #ifdef USE_REAL_DOUBLE
 typedef double real_t;
@@ -29,13 +45,8 @@ typedef float real_t;
 #define ITMAX 10
 #endif
 
-#ifndef BLOCK_SIZE_X
-#define BLOCK_SIZE_X 16
-#endif
-
-#ifndef BLOCK_SIZE_Y
-#define BLOCK_SIZE_Y 16
-#endif
+const int DEFAULT_BLOCK_X = 16;
+const int DEFAULT_BLOCK_Y = 16;
 
 #define CUDA_CHECK(call) { \
     cudaError_t err = (call); \
@@ -131,12 +142,12 @@ __global__ void z_sweep(real_t* b, int nx, int ny, int nz, real_t* d_eps) {
         }
     }
 
-    __shared__ real_t shared_eps[BLOCK_SIZE_X * BLOCK_SIZE_Y];
+    extern __shared__ real_t shared_eps[];
     int tid = threadIdx.x + threadIdx.y * blockDim.x;
     shared_eps[tid] = local_eps;
     __syncthreads();
 
-    for (int s = BLOCK_SIZE_X * BLOCK_SIZE_Y / 2; s > 0; s /= 2) {
+    for (int s = blockDim.x * blockDim.y  / 2; s > 0; s /= 2) {
         if (tid < s) {
             shared_eps[tid] = max(shared_eps[tid], shared_eps[tid + s]);
         }
@@ -185,8 +196,33 @@ void print_gpu_info() {
            prop.maxThreadsDim[0], prop.maxThreadsDim[1], prop.maxThreadsDim[2]);
 }
 
-int main() {
-    dim3 blockSize(BLOCK_SIZE_X, BLOCK_SIZE_Y);
+void write_kernel_stats(const KernelStats& stats, const std::string& filename) {
+    std::ofstream out(filename, std::ios::app);
+    if (!out.is_open()) {
+        printf("Failed to open profile file\n");
+        return;
+    }
+    
+    out << "Block size: " << stats.block_x << "x" << stats.block_y << "\n";
+    out << "x_sweep: " << stats.x_sweep_time << " ms\n";
+    out << "y_sweep: " << stats.y_sweep_time << " ms\n";
+    out << "to_z_major: " << stats.to_z_major_time << " ms\n";
+    out << "z_sweep: " << stats.z_sweep_time << " ms\n";
+    out << "from_z_major: " << stats.from_z_major_time << " ms\n";
+    out << "Total: " << stats.total_time << " ms\n\n";
+    out.close();
+}
+
+int main(int argc, char** argv) {
+    int block_x = DEFAULT_BLOCK_X;
+    int block_y = DEFAULT_BLOCK_Y;
+    
+    if (argc == 3) {
+        block_x = atoi(argv[1]);
+        block_y = atoi(argv[2]);
+    }
+    
+    dim3 blockSize(block_x, block_y);
     
     print_gpu_info();
     
@@ -218,30 +254,70 @@ int main() {
     CUDA_CHECK(cudaEventCreate(&stop));
     CUDA_CHECK(cudaEventRecord(start));
     
+    KernelStats stats;
+    stats.block_x = block_x;
+    stats.block_y = block_y;
+    
+    cudaEvent_t start_kernel, stop_kernel;
+    CUDA_CHECK(cudaEventCreate(&start_kernel));
+    CUDA_CHECK(cudaEventCreate(&stop_kernel));
+    
     for (int it = 1; it <= ITMAX; it++) {
         real_t h_eps = 0;
         CUDA_CHECK(cudaMemcpy(d_eps, &h_eps, sizeof(real_t), cudaMemcpyHostToDevice));
         
+        // x_sweep
+        CUDA_CHECK(cudaEventRecord(start_kernel));
         x_sweep<<<gridSizeX, blockSize>>>(d_A, nx, ny, nz);
-        CUDA_CHECK(cudaGetLastError());
+        CUDA_CHECK(cudaEventRecord(stop_kernel));
+        CUDA_CHECK(cudaEventSynchronize(stop_kernel));
+        CUDA_CHECK(cudaEventElapsedTime(&stats.x_sweep_time, start_kernel, stop_kernel));
         
+        // y_sweep
+        CUDA_CHECK(cudaEventRecord(start_kernel));
         y_sweep<<<gridSizeY, blockSize>>>(d_A, nx, ny, nz);
-        CUDA_CHECK(cudaGetLastError());
-
-        reorder_to_z_major<<<gridSizeZ, blockSize>>>(d_A, d_B, nx, ny, nz);
-        CUDA_CHECK(cudaGetLastError());
+        CUDA_CHECK(cudaEventRecord(stop_kernel));
+        CUDA_CHECK(cudaEventSynchronize(stop_kernel));
+        CUDA_CHECK(cudaEventElapsedTime(&stats.y_sweep_time, start_kernel, stop_kernel));
         
-        z_sweep<<<gridSizeZ, blockSize>>>(d_B, nx, ny, nz, d_eps);
-        CUDA_CHECK(cudaGetLastError());
-
-        reorder_from_z_major<<<gridSizeZ, blockSize>>>(d_B, d_A, nx, ny, nz);       
-        CUDA_CHECK(cudaGetLastError());
-
+        // reorder_to_z_major
+        CUDA_CHECK(cudaEventRecord(start_kernel));
+        reorder_to_z_major<<<gridSizeZ, blockSize>>>(d_A, d_B, nx, ny, nz);
+        CUDA_CHECK(cudaEventRecord(stop_kernel));
+        CUDA_CHECK(cudaEventSynchronize(stop_kernel));
+        CUDA_CHECK(cudaEventElapsedTime(&stats.to_z_major_time, start_kernel, stop_kernel));
+        
+        // z_sweep
+        CUDA_CHECK(cudaEventRecord(start_kernel));
+        size_t shared_size = blockSize.x * blockSize.y * sizeof(real_t);
+		z_sweep<<<gridSizeZ, blockSize, shared_size>>>(d_B, nx, ny, nz, d_eps);
+        CUDA_CHECK(cudaEventRecord(stop_kernel));
+        CUDA_CHECK(cudaEventSynchronize(stop_kernel));
+        CUDA_CHECK(cudaEventElapsedTime(&stats.z_sweep_time, start_kernel, stop_kernel));
+        
+        // reorder_from_z_major
+        CUDA_CHECK(cudaEventRecord(start_kernel));
+        reorder_from_z_major<<<gridSizeZ, blockSize>>>(d_B, d_A, nx, ny, nz);
+        CUDA_CHECK(cudaEventRecord(stop_kernel));
+        CUDA_CHECK(cudaEventSynchronize(stop_kernel));
+        CUDA_CHECK(cudaEventElapsedTime(&stats.from_z_major_time, start_kernel, stop_kernel));
+        
         CUDA_CHECK(cudaMemcpy(&h_eps, d_eps, sizeof(real_t), cudaMemcpyDeviceToHost));
         
         printf(" IT = %4i   EPS = " EPS_FORMAT "\n", it, h_eps);
         if (h_eps < MAXEPS) break;
     }
+	
+	stats.total_time = stats.x_sweep_time + 
+					   stats.y_sweep_time + 
+					   stats.to_z_major_time + 
+					   stats.z_sweep_time + 
+					   stats.from_z_major_time;
+    
+    std::string profile_dir = "profiles";
+    system(("mkdir -p " + profile_dir).c_str());
+    std::string profile_file = profile_dir + "/gpu_profile.txt";
+    write_kernel_stats(stats, profile_file);
     
     CUDA_CHECK(cudaEventRecord(stop));
     CUDA_CHECK(cudaEventSynchronize(stop));

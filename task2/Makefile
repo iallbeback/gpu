@@ -14,7 +14,7 @@ COMPARE_FLAGS = -O3 -std=c99
 
 TARGETS = adi3d_cpu adi3d_gpu compare_results
 
-BLOCK_SIZES = 4x4 8x8 16x16 32x32 16x8 8x16 32x16 16x32
+BLOCK_SIZES = 4x4 8x8 16x16 16x8 8x16
 
 all: $(TARGETS)
 
@@ -37,10 +37,24 @@ test_blocks: adi3d_gpu
 		x=$$(echo $$blocks | cut -d'x' -f1); \
 		y=$$(echo $$blocks | cut -d'x' -f2); \
 		echo "Testing block size: $$x $$y"; \
-		BLOCK_SIZE_X=$$x BLOCK_SIZE_Y=$$y ./adi3d_gpu > test_blocks/gpu_$${blocks}.txt; \
+		./adi3d_gpu $$x $$y > test_blocks/gpu_$${blocks}.txt; \
+	done
+
+prof: adi3d_gpu
+	@echo "Testing different block sizes..."
+	@mkdir -p test_blocks
+	@mkdir -p profiles
+	@echo "Kernel profiling results" > profiles/gpu_profile.txt
+	@for blocks in $(BLOCK_SIZES); do \
+		x=$$(echo $$blocks | cut -d'x' -f1); \
+		y=$$(echo $$blocks | cut -d'x' -f2); \
+		echo "Testing block size: $$x $$y"; \
+		./adi3d_gpu $$x $$y > test_blocks/gpu_$${blocks}.txt; \
 	done
 
 clean:
 	rm -f $(TARGETS) *.o *.txt
+	rm -rf test_blocks
+	rm -rf profiles
 
-.PHONY: all clean run test_blocks
+.PHONY: all clean run test_blocks prof

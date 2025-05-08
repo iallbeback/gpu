@@ -17,8 +17,8 @@ Memory used per array: 5561.83 MB
  ADI Benchmark Completed.
  Size            =  900 x  900 x  900
  Iterations      =                 10
- Time in seconds =               3.66
+ Time in seconds =               3.97
  Operation type  =     double
  GPU Memory used =     11123.66 MB
- Block size      =     16 x 16
+ Block size      =     8 x 16
  END OF ADI Benchmark
