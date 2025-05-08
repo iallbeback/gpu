@@ -14,7 +14,7 @@ COMPARE_FLAGS = -O3 -std=c99
 
 TARGETS = adi3d_cpu adi3d_gpu compare_results
 
-BLOCK_SIZES = 4x4 8x8 16x16 16x8 8x16
+BLOCK_SIZES = 4x4 8x8 16x16 16x8 8x16 32x32 32x8 8x32
 
 all: $(TARGETS)
 
