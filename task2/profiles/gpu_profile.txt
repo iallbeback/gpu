@@ -1,41 +1,65 @@
 Kernel profiling results
 Block size: 4x4
-x_sweep: 68.6461 ms
-y_sweep: 38.4224 ms
-to_z_major: 56.9529 ms
-z_sweep: 80.7067 ms
-from_z_major: 117.685 ms
-Total: 362.413 ms
+x_sweep: 68.5876 ms
+y_sweep: 38.5898 ms
+to_z_major: 57.0975 ms
+z_sweep: 80.4516 ms
+from_z_major: 116.69 ms
+Total: 361.416 ms
 
 Block size: 8x8
-x_sweep: 51.8029 ms
-y_sweep: 52.9646 ms
-to_z_major: 69.9194 ms
-z_sweep: 96.3162 ms
-from_z_major: 88.6033 ms
-Total: 359.606 ms
+x_sweep: 51.8311 ms
+y_sweep: 53.0585 ms
+to_z_major: 69.9073 ms
+z_sweep: 96.2498 ms
+from_z_major: 89.4789 ms
+Total: 360.526 ms
 
 Block size: 16x16
-x_sweep: 37.0177 ms
-y_sweep: 37.3773 ms
-to_z_major: 97.5934 ms
-z_sweep: 71.1529 ms
-from_z_major: 122.665 ms
-Total: 365.807 ms
+x_sweep: 36.9676 ms
+y_sweep: 37.1608 ms
+to_z_major: 97.5876 ms
+z_sweep: 71.0077 ms
+from_z_major: 124.791 ms
+Total: 367.515 ms
 
 Block size: 16x8
-x_sweep: 37.0511 ms
-y_sweep: 37.1041 ms
-to_z_major: 98.6222 ms
-z_sweep: 70.9254 ms
-from_z_major: 125.185 ms
-Total: 368.888 ms
+x_sweep: 37.0925 ms
+y_sweep: 37.0871 ms
+to_z_major: 98.5497 ms
+z_sweep: 70.9899 ms
+from_z_major: 126.315 ms
+Total: 370.035 ms
 
 Block size: 8x16
-x_sweep: 53.6636 ms
-y_sweep: 54.3263 ms
-to_z_major: 70.3983 ms
-z_sweep: 95.8632 ms
-from_z_major: 87.4381 ms
-Total: 361.689 ms
+x_sweep: 53.4948 ms
+y_sweep: 54.1734 ms
+to_z_major: 70.5467 ms
+z_sweep: 95.5926 ms
+from_z_major: 86.0509 ms
+Total: 359.858 ms
+
+Block size: 32x32
+x_sweep: 30.0925 ms
+y_sweep: 30.6282 ms
+to_z_major: 172.887 ms
+z_sweep: 54.8291 ms
+from_z_major: 192.283 ms
+Total: 480.72 ms
+
+Block size: 32x8
+x_sweep: 30.2898 ms
+y_sweep: 30.2218 ms
+to_z_major: 180.705 ms
+z_sweep: 54.5099 ms
+from_z_major: 221.888 ms
+Total: 517.615 ms
+
+Block size: 8x32
+x_sweep: 54.4694 ms
+y_sweep: 55.2439 ms
+to_z_major: 70.6877 ms
+z_sweep: 96.8317 ms
+from_z_major: 78.3296 ms
+Total: 355.562 ms
 
