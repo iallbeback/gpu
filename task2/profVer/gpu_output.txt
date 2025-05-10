@@ -17,11 +17,11 @@ Memory used per array: 5561.83 MB
  ADI Benchmark Completed.
  Size            =  900 x  900 x  900
  Iterations      =                 10
- Time in seconds =               3.51
+ Time in seconds =               4.00
  Operation type  =     double
  GPU Memory used =     11123.66 MB
- x_sweep block   =     32 x 16
- y_sweep block   =     32 x 16
- reorder block   =     4 x 4
- z_sweep block   =     4 x 4
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
  END OF ADI Benchmark

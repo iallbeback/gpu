@@ -216,16 +216,12 @@ void write_kernel_stats(const KernelStats& stats, const std::string& filename) {
 }
 
 int main(int argc, char** argv) {
-    //dim3 default_block(16, 16);
-    //dim3 x_sweep_block = default_block;
-    //dim3 y_sweep_block = default_block;
-    //dim3 reorder_block = default_block;
-    //dim3 z_sweep_block = default_block;
-    dim3 x_sweep_block(32, 16);
-    dim3 y_sweep_block(32, 16);
-    dim3 reorder_block(4, 4);
-    dim3 z_sweep_block(4, 4);
-	
+    dim3 default_block(16, 16);
+    dim3 x_sweep_block = default_block;
+    dim3 y_sweep_block = default_block;
+    dim3 reorder_block = default_block;
+    dim3 z_sweep_block = default_block;
+    
     if (argc == 3) {
         x_sweep_block.x = y_sweep_block.x = reorder_block.x = z_sweep_block.x = atoi(argv[1]);
         x_sweep_block.y = y_sweep_block.y = reorder_block.y = z_sweep_block.y = atoi(argv[2]);

@@ -1,0 +1,2153 @@
+--- Independent Block Profiling Results ---
+
+--- Varying x_sweep block size (others fixed at 16x16) ---
+
+Running with x_sweep block: 4x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.31
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     4 x 4
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 4x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.47
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     4 x 8
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 4x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.53
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     4 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 4x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.55
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     4 x 32
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 4x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.56
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     4 x 64
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 8x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.04
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     8 x 4
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 8x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.20
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     8 x 8
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 8x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.20
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     8 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 8x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.25
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     8 x 32
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 8x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.19
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     8 x 64
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 16x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.01
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 4
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 16x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.05
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 8
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 16x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.99
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 16x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.05
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 32
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 32x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.95
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     32 x 4
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 32x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.95
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     32 x 8
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 32x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.97
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     32 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with x_sweep block: 32x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.00
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     32 x 32
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+
+--- Varying y_sweep block size (others fixed at 16x16) ---
+
+Running with y_sweep block: 4x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.95
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     4 x 4
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 4x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.37
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     4 x 8
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 4x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.50
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     4 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 4x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.53
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     4 x 32
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 4x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.59
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     4 x 64
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 8x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.01
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     8 x 4
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 8x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.19
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     8 x 8
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 8x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.19
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     8 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 8x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.23
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     8 x 32
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 8x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.23
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     8 x 64
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 16x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.00
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 4
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 16x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.05
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 8
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 16x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.07
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 16x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.01
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 32
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 32x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.94
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     32 x 4
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 32x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.96
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     32 x 8
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 32x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.96
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     32 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with y_sweep block: 32x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.94
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     32 x 32
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+
+--- Varying reorder block size (others fixed at 16x16) ---
+
+Running with reorder block: 4x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.56
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     4 x 4
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 4x8
+CUDA error at adi3d_gpu.cu:256 - out of memory
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+--- End of run ---
+
+Running with reorder block: 4x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.25
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     4 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 4x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               2.85
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     4 x 32
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 4x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1318131E+01
+ IT =    2   EPS =  7.0724416E+00
+ IT =    3   EPS =  5.4798735E+00
+ IT =    4   EPS =  4.6058609E+00
+ IT =    5   EPS =  4.0393270E+00
+ IT =    6   EPS =  3.6357891E+00
+ IT =    7   EPS =  3.3303336E+00
+ IT =    8   EPS =  3.0890911E+00
+ IT =    9   EPS =  2.8924990E+00
+ IT =   10   EPS =  2.7283927E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               2.71
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     4 x 64
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 8x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.32
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     8 x 4
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 8x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.44
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     8 x 8
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 8x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.39
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     8 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 8x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               2.96
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     8 x 32
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 8x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1318131E+01
+ IT =    2   EPS =  7.0724416E+00
+ IT =    3   EPS =  5.4798735E+00
+ IT =    4   EPS =  4.6058609E+00
+ IT =    5   EPS =  4.0393270E+00
+ IT =    6   EPS =  3.6357891E+00
+ IT =    7   EPS =  3.3303336E+00
+ IT =    8   EPS =  3.0890911E+00
+ IT =    9   EPS =  2.8924990E+00
+ IT =   10   EPS =  2.7283927E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               2.71
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     8 x 64
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 16x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.09
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 4
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 16x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.04
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 8
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 16x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.06
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 16x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.48
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 32
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 32x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               5.51
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     32 x 4
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 32x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               5.44
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     32 x 8
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 32x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2563960E+01
+ IT =    2   EPS =  7.8510845E+00
+ IT =    3   EPS =  6.0833217E+00
+ IT =    4   EPS =  5.1131954E+00
+ IT =    5   EPS =  4.4843853E+00
+ IT =    6   EPS =  4.0365070E+00
+ IT =    7   EPS =  3.6975027E+00
+ IT =    8   EPS =  3.4297756E+00
+ IT =    9   EPS =  3.2116106E+00
+ IT =   10   EPS =  3.0295042E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               5.36
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     32 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with reorder block: 32x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.0150167E+01
+ IT =    2   EPS =  8.2490962E+00
+ IT =    3   EPS =  7.2395435E+00
+ IT =    4   EPS =  6.5920260E+00
+ IT =    5   EPS =  6.1283641E+00
+ IT =    6   EPS =  5.7733709E+00
+ IT =    7   EPS =  5.4891576E+00
+ IT =    8   EPS =  5.2542359E+00
+ IT =    9   EPS =  5.0553597E+00
+ IT =   10   EPS =  4.8838414E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.93
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     32 x 32
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+
+--- Varying z_sweep block size (others fixed at 16x16) ---
+
+Running with z_sweep block: 4x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  7.5250278E+00
+ IT =    2   EPS =  6.1161707E+00
+ IT =    3   EPS =  5.3681065E+00
+ IT =    4   EPS =  4.8883454E+00
+ IT =    5   EPS =  4.5448290E+00
+ IT =    6   EPS =  4.2818365E+00
+ IT =    7   EPS =  4.0712899E+00
+ IT =    8   EPS =  3.8972658E+00
+ IT =    9   EPS =  3.7499485E+00
+ IT =   10   EPS =  3.6229009E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.33
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     4 x 4
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 4x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  8.7931034E+00
+ IT =    2   EPS =  7.1464822E+00
+ IT =    3   EPS =  6.2721057E+00
+ IT =    4   EPS =  5.7113098E+00
+ IT =    5   EPS =  5.3097569E+00
+ IT =    6   EPS =  5.0023235E+00
+ IT =    7   EPS =  4.7561921E+00
+ IT =    8   EPS =  4.5527514E+00
+ IT =    9   EPS =  4.3805285E+00
+ IT =   10   EPS =  4.2319993E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.54
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     4 x 8
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 4x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1251390E+01
+ IT =    2   EPS =  7.0307286E+00
+ IT =    3   EPS =  5.4475459E+00
+ IT =    4   EPS =  4.5786823E+00
+ IT =    5   EPS =  4.0154846E+00
+ IT =    6   EPS =  3.6143221E+00
+ IT =    7   EPS =  3.3106639E+00
+ IT =    8   EPS =  3.0708401E+00
+ IT =    9   EPS =  2.8754038E+00
+ IT =   10   EPS =  2.7122617E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.67
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     4 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 4x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1251390E+01
+ IT =    2   EPS =  7.0307286E+00
+ IT =    3   EPS =  5.4475459E+00
+ IT =    4   EPS =  4.5786823E+00
+ IT =    5   EPS =  4.0154846E+00
+ IT =    6   EPS =  3.6143221E+00
+ IT =    7   EPS =  3.3106639E+00
+ IT =    8   EPS =  3.0708401E+00
+ IT =    9   EPS =  2.8754038E+00
+ IT =   10   EPS =  2.7122617E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.65
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     4 x 32
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 4x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1251390E+01
+ IT =    2   EPS =  7.0307286E+00
+ IT =    3   EPS =  5.4475459E+00
+ IT =    4   EPS =  4.5786823E+00
+ IT =    5   EPS =  4.0154846E+00
+ IT =    6   EPS =  3.6143221E+00
+ IT =    7   EPS =  3.3106639E+00
+ IT =    8   EPS =  3.0708401E+00
+ IT =    9   EPS =  2.8754038E+00
+ IT =   10   EPS =  2.7122617E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.71
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     4 x 64
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 8x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  8.7931034E+00
+ IT =    2   EPS =  7.1464822E+00
+ IT =    3   EPS =  6.2721057E+00
+ IT =    4   EPS =  5.7113098E+00
+ IT =    5   EPS =  5.3097569E+00
+ IT =    6   EPS =  5.0023235E+00
+ IT =    7   EPS =  4.7561921E+00
+ IT =    8   EPS =  4.5527514E+00
+ IT =    9   EPS =  4.3805285E+00
+ IT =   10   EPS =  4.2319993E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.43
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     8 x 4
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 8x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.0061179E+01
+ IT =    2   EPS =  8.1767937E+00
+ IT =    3   EPS =  7.1761050E+00
+ IT =    4   EPS =  6.5342741E+00
+ IT =    5   EPS =  6.0746849E+00
+ IT =    6   EPS =  5.7228104E+00
+ IT =    7   EPS =  5.4410943E+00
+ IT =    8   EPS =  5.2082370E+00
+ IT =    9   EPS =  5.0111085E+00
+ IT =   10   EPS =  4.8410977E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.54
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     8 x 8
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 8x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2519466E+01
+ IT =    2   EPS =  7.8232759E+00
+ IT =    3   EPS =  6.0617700E+00
+ IT =    4   EPS =  5.0950763E+00
+ IT =    5   EPS =  4.4684904E+00
+ IT =    6   EPS =  4.0221956E+00
+ IT =    7   EPS =  3.6843895E+00
+ IT =    8   EPS =  3.4176083E+00
+ IT =    9   EPS =  3.2002138E+00
+ IT =   10   EPS =  3.0187502E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.84
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     8 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 8x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2519466E+01
+ IT =    2   EPS =  7.8232759E+00
+ IT =    3   EPS =  6.0617700E+00
+ IT =    4   EPS =  5.0950763E+00
+ IT =    5   EPS =  4.4684904E+00
+ IT =    6   EPS =  4.0221956E+00
+ IT =    7   EPS =  3.6843895E+00
+ IT =    8   EPS =  3.4176083E+00
+ IT =    9   EPS =  3.2002138E+00
+ IT =   10   EPS =  3.0187502E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.76
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     8 x 32
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 8x64
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2519466E+01
+ IT =    2   EPS =  7.8232759E+00
+ IT =    3   EPS =  6.0617700E+00
+ IT =    4   EPS =  5.0950763E+00
+ IT =    5   EPS =  4.4684904E+00
+ IT =    6   EPS =  4.0221956E+00
+ IT =    7   EPS =  3.6843895E+00
+ IT =    8   EPS =  3.4176083E+00
+ IT =    9   EPS =  3.2002138E+00
+ IT =   10   EPS =  3.0187502E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.81
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     8 x 64
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 16x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1251390E+01
+ IT =    2   EPS =  7.0307286E+00
+ IT =    3   EPS =  5.4475459E+00
+ IT =    4   EPS =  4.5786823E+00
+ IT =    5   EPS =  4.0154846E+00
+ IT =    6   EPS =  3.6143221E+00
+ IT =    7   EPS =  3.3106639E+00
+ IT =    8   EPS =  3.0708401E+00
+ IT =    9   EPS =  2.8754038E+00
+ IT =   10   EPS =  2.7122617E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.48
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 4
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 16x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2519466E+01
+ IT =    2   EPS =  7.8232759E+00
+ IT =    3   EPS =  6.0617700E+00
+ IT =    4   EPS =  5.0950763E+00
+ IT =    5   EPS =  4.4684904E+00
+ IT =    6   EPS =  4.0221956E+00
+ IT =    7   EPS =  3.6843895E+00
+ IT =    8   EPS =  3.4176083E+00
+ IT =    9   EPS =  3.2002138E+00
+ IT =   10   EPS =  3.0187502E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.67
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 8
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 16x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.98
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 16x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               4.03
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     16 x 32
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 32x4
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.1251390E+01
+ IT =    2   EPS =  7.0307286E+00
+ IT =    3   EPS =  5.4475459E+00
+ IT =    4   EPS =  4.5786823E+00
+ IT =    5   EPS =  4.0154846E+00
+ IT =    6   EPS =  3.6143221E+00
+ IT =    7   EPS =  3.3106639E+00
+ IT =    8   EPS =  3.0708401E+00
+ IT =    9   EPS =  2.8754038E+00
+ IT =   10   EPS =  2.7122617E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.40
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     32 x 4
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 32x8
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.2519466E+01
+ IT =    2   EPS =  7.8232759E+00
+ IT =    3   EPS =  6.0617700E+00
+ IT =    4   EPS =  5.0950763E+00
+ IT =    5   EPS =  4.4684904E+00
+ IT =    6   EPS =  4.0221956E+00
+ IT =    7   EPS =  3.6843895E+00
+ IT =    8   EPS =  3.4176083E+00
+ IT =    9   EPS =  3.2002138E+00
+ IT =   10   EPS =  3.0187502E+00
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.60
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     32 x 8
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 32x16
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.86
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     32 x 16
+ END OF ADI Benchmark
+--- End of run ---
+
+Running with z_sweep block: 32x32
+GPU Device: Tesla P100-SXM2-16GB
+Total Global Memory: 16280.88 MB
+Max Threads per Block: 1024
+Max Threads Dim: 1024 x 1024 x 64
+Using array size: 900 x 900 x 900
+Memory used per array: 5561.83 MB
+ IT =    1   EPS =  1.4977753E+01
+ IT =    2   EPS =  7.4833148E+00
+ IT =    3   EPS =  3.7388765E+00
+ IT =    4   EPS =  2.8020717E+00
+ IT =    5   EPS =  2.0999896E+00
+ IT =    6   EPS =  1.6321086E+00
+ IT =    7   EPS =  1.3979074E+00
+ IT =    8   EPS =  1.2004305E+00
+ IT =    9   EPS =  1.0395964E+00
+ IT =   10   EPS =  9.0896725E-01
+ ADI Benchmark Completed.
+ Size            =  900 x  900 x  900
+ Iterations      =                 10
+ Time in seconds =               3.89
+ Operation type  =     double
+ GPU Memory used =     11123.66 MB
+ x_sweep block   =     16 x 16
+ y_sweep block   =     16 x 16
+ reorder block   =     16 x 16
+ z_sweep block   =     32 x 32
+ END OF ADI Benchmark
+--- End of run ---
+

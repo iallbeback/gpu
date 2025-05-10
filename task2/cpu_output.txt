@@ -14,7 +14,7 @@ Memory used: 5561.83 MB
  ADI Benchmark Completed.
  Size            =  900 x  900 x  900
  Iterations      =                 10
- Time in seconds =               4.77
+ Time in seconds =               4.81
  Operation type  =     double
  Threads used    =                152
  END OF ADI Benchmark
